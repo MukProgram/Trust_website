@@ -1,50 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisdom Trust</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Webgo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="contain">
-    <nav class="navbar navbar-expand-lg py-lg-0 px-lg-5 wow fadeIn">
-      <a class="navbar-brand ms-4 ms-lg-0" href="#">
-        
-        <i class="bi bi-infinity" style="font-size: 40px; font-weight: 900; color: rgb(255, 255, 255);"></i>
-        <span class="webgo">Wisdom Trust</span>
-      </a>
-      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ms-auto p-4 p-lg-0">
-                <li class="nav-item active ">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <header>
+        <h3>WEBGO</h3>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+            <button class="nav-btn nav-close-btn">
+                <FaTimes/>
+            </button>
         </nav>
-  </div>
-  
+        <button class="nav-btn">
+            <FaBars/>
+        </button>        
+    </header>
+
+    <div class="hero-container">
+        <img src="./images/hero-image.jpg" alt="Women in Tech"/>
+        <h1>Are you a lady looking to start a career in tech?</h1>
+        <h1>Worry not.</h1>
+        <h1>We provide the necessary resources
+            <br/> to make your dream come true!
+        </h1>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-text">Top Values</div>
+        </div>
+        <div class="card">
+            <div class="card-text">Discover your talent</div>
+        </div>
+        <div className="card">
+            <div class="card-text">Get Mentorship</div>
+        </div>
+    </div>
+
+    <div class="about-us">
+        <h2>ABOUT US</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/>
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure<br/>
+dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br/>
+mollit anim id est laborum.
+        </p>
+        <h2>THE TEAM</h2>
     
-      
+    </div>
+
+    <div class="contact-form">
+        <h2>CONTACT US</h2>
+        <div class="form">
+            <form>
+                <label class="first-name">
+                    First Name:<br/>
+                    <input type="text" name="first-name" id="first-name"/>
+                </label>
+                <label class="last-name">
+                    Last Name:<br/>
+                    <input type="text" name="last-name" id="last-name" />
+                </label><br/>
+                <label class="email">
+                    Email:<br/>
+                    <input type="text" name="email" id="email"/>
+                </label><br/>
+                <label class="message">
+                    Message:<br/>
+                    <textarea type="text" name="message" id="message"></textarea>
+                </label><br/>
+                <input type="submit" value="Submit" id="submit"/>
+            </form>
+        </div>
+    </div>
+
+
+
+
 </body>
+<footer class="footer">
+    <div class="footer__addr">
+        <h1 class="footer__logo">WEBGO</h1>
+            
+        <h2>Contact</h2>
+        
+        <address>
+        5534 Somewhere In. The World 22193-10212<br/>
+            
+        <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+    </div>
+    
+    <ul class="footer__nav">
+        <li class="nav__item">
+        <h2 class="nav__title">Media</h2>
+
+        <ul class="nav__ul">
+            <li>
+            <a href="/#">Online</a>
+            </li>
+
+            <li>
+            <a href="/#">Print</a>
+            </li>
+                
+            <li>
+            <a href="/#">Alternative Ads</a>
+            </li>
+        </ul>
+        </li>
+        
+        <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">Technology</h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+            <li>
+            <a href="/#">Hardware Design</a>
+            </li>
+            
+            <li>
+            <a href="/#">Software Design</a>
+            </li>
+            
+            <li>
+            <a href="/#">Digital Signage</a>
+            </li>
+            
+            <li>
+            <a href="/#">Automation</a>
+            </li>
+            
+            <li>
+            <a href="/#">Artificial Intelligence</a>
+            </li>
+            
+            <li>
+            <a href="/#">IoT</a>
+            </li>
+        </ul>
+        </li>
+        
+        <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+        
+        <ul class="nav__ul">
+            <li>
+            <a href="/#">Privacy Policy</a>
+            </li>
+            
+            <li>
+            <a href="/#">Terms of Use</a>
+            </li>
+            
+            <li>
+            <a href="/#">Sitemap</a>
+            </li>
+        </ul>
+        </li>
+    </ul>
+    
+    <div class="legal">
+        <p>&copy; 2019 Something. All rights reserved.</p>
+        
+        <div class="legal__links">
+        <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+        </div>
+    </div>
+</footer>
 </html>
