@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en"></html>
 <head>
-    <title>Webgo</title>
+    <title>WISDOM CHARITY</title>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<title>Responsive Card Slider</title>-->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Swiper CSS -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <header>
-        <h3>WEBGO</h3>
+        <h3>Wisdom Charity</h3>
         <nav>
             <a href="#">Home</a>
             <a href="#">About Us</a>
@@ -31,18 +35,26 @@
         </nav>
         <button class="nav-btn">
             <FaBars/>
-        </button>        
+        </button>      
+          
     </header>
 
+
+    <!-- Hero section start  -->
     <div class="hero-container">
         <img src="./images/hero-image.jpg" alt="Women in Tech"/>
-        <h1>Are you a lady looking to start a career in tech?</h1>
-        <h1>Worry not.</h1>
-        <h1>We provide the necessary resources
-            <br/> to make your dream come true!
-        </h1>
+        <div class="text-white text-center hero-text">
+            <h1>Are you a lady looking to start a career in tech?</h1>
+            <h1>Worry not.</h1>
+            <h1>We provide the necessary resources
+                 to make your dream come true!
+            </h1>
+        </div>
     </div>
+    <!-- Hero section end  -->
 
+
+   <!-- Cards section start  -->
     <div class="cards-container">
         <div class="card">
             <div class="card-text">Top Values</div>
@@ -50,22 +62,47 @@
         <div class="card">
             <div class="card-text">Discover your talent</div>
         </div>
-        <div className="card">
+        <div class="card">
             <div class="card-text">Get Mentorship</div>
         </div>
     </div>
+    <!-- Cards section end -->
 
-    <div class="about-us">
-        <h2>ABOUT US</h2>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/>
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br/>
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure<br/>
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br/>
-mollit anim id est laborum.
-        </p>
-        <h2>THE TEAM</h2>
+
+ <!-- About section start  -->
+   
+    <div class="container-xxl py-5">
+        <div class="container">
+            <h2 class="text-center py-1 px-3 mb-3">ABOUT US</h2>
+            <div class="row">
+                <div class="col-lg-6" >
+                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100 pt-5 pe-5" src="images/WhatsApp Image 2022-10-22 at 09.47.26.jpeg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h-100">
+                        <p class="my-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt  
+                            mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt  
+                            mollit anim id est laborum. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section end  -->
+
+    <!-- Team start  -->
+    <div class="container-xxl py-5 team">
+        <h2 class="text-center">THE TEAM</h2>
         <div class="teampart">
             <div class="slide-container swiper">
                 <div class="slide-content">
@@ -160,123 +197,138 @@ mollit anim id est laborum.
             </div>
         </div>
     </div>
+    <!-- Team end  -->
 
-    <div class="contact-form">
-        <h2>CONTACT US</h2>
-        <div class="form">
-            <form>
-                <label class="first-name">
-                    First Name:<br/>
-                    <input type="text" name="first-name" id="first-name"/>
-                </label>
-                <label class="last-name">
-                    Last Name:<br/>
-                    <input type="text" name="last-name" id="last-name" />
-                </label><br/>
-                <label class="email">
-                    Email:<br/>
-                    <input type="text" name="email" id="email"/>
-                </label><br/>
-                <label class="message">
-                    Message:<br/>
-                    <textarea type="text" name="message" id="message"></textarea>
-                </label><br/>
-                <input type="submit" value="Submit" id="submit"/>
-            </form>
-        </div>
-    </div>
-
-
-</body>
-<footer class="footer">
-    <div class="footer__addr">
-        <h1 class="footer__logo">WEBGO</h1>
-            
-        <h2>Contact</h2>
-        
-        <address>
-        5534 Somewhere In. The World 22193-10212<br/>
-            
-        <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-        </address>
-    </div>
-    
-    <ul class="footer__nav">
-        <li class="nav__item">
-        <h2 class="nav__title">Media</h2>
-
-        <ul class="nav__ul">
-            <li>
-            <a href="/#">Online</a>
-            </li>
-
-            <li>
-            <a href="/#">Print</a>
-            </li>
+    <!-- Contact start  -->
+   
+    <div class="container-xxl py-5 contact-form ">
+        <div class="container">
+            <div class="row g-5">
+                <div class=" wow fadeIn" data-wow-delay="0.1s">
+                    <h2 class="text-center py-1 px-3 mb-3">CONTACT US</h2>
+                    <form class="contact">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-2 px-3 me-3">
+                                    Send Message
+                                    <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 
-            <li>
-            <a href="/#">Alternative Ads</a>
-            </li>
-        </ul>
-        </li>
-        
-        <li class="nav__item nav__item--extra">
-        <h2 class="nav__title">Technology</h2>
-        
-        <ul class="nav__ul nav__ul--extra">
-            <li>
-            <a href="/#">Hardware Design</a>
-            </li>
-            
-            <li>
-            <a href="/#">Software Design</a>
-            </li>
-            
-            <li>
-            <a href="/#">Digital Signage</a>
-            </li>
-            
-            <li>
-            <a href="/#">Automation</a>
-            </li>
-            
-            <li>
-            <a href="/#">Artificial Intelligence</a>
-            </li>
-            
-            <li>
-            <a href="/#">IoT</a>
-            </li>
-        </ul>
-        </li>
-        
-        <li class="nav__item">
-        <h2 class="nav__title">Legal</h2>
-        
-        <ul class="nav__ul">
-            <li>
-            <a href="/#">Privacy Policy</a>
-            </li>
-            
-            <li>
-            <a href="/#">Terms of Use</a>
-            </li>
-            
-            <li>
-            <a href="/#">Sitemap</a>
-            </li>
-        </ul>
-        </li>
-    </ul>
-    
-    <div class="legal">
-        <p>&copy; 2019 Something. All rights reserved.</p>
-        
-        <div class="legal__links">
-        <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+            </div>
         </div>
     </div>
-</footer>
+ 
+    <!-- Contact end  -->
 
-<script src="script.js"></script>
+    <!-- Footer start  -->
+
+    <footer class=" footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Wisdom Charity</h1>
+                
+            <h2> <span><i class="bi bi-geo-alt-fill"></i></span> Address</h2>
+            
+            <address>
+            5534 Somewhere In. The World 22193-10212<br/>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+        </div>
+        
+        <ul class="footer__nav">
+            <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+                <li>
+                <a href="/#">Privacy Policy</a>
+                </li>
+                
+                <li>
+                <a href="/#">Terms of Use</a>
+                </li>
+                
+                <li>
+                <a href="/#">Sitemap</a>
+                </li>
+            </ul>
+
+            </li>
+            
+            <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Quick Links</h2>
+            
+            <ul class="nav__ul ">
+                <li>
+                <a href="/#">Home</a>
+                </li>
+                
+                <li>
+                <a href="/#">About</a>
+                </li>
+                
+                <li>
+                <a href="/#">Our team</a>
+                </li>
+                
+                <li>
+                <a href="/#">Contact</a>
+                </li>
+            </ul>
+            </li>
+            
+                
+            
+        </ul>
+        
+        <div class="legal">
+            <p>&copy; 2022 Copyright. All rights reserved.</p>
+            
+            <div class="legal__links">
+            <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer end  -->
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
 </html>
