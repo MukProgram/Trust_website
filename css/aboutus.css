@@ -1,0 +1,30 @@
+.left-half {
+    background: url(../images/img.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    align-content: center;
+    zoom: 50%;
+ }
+
+ .right-half{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    align-content: center;
+ }
+
+ .texts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+ }
+
+ .texts p {
+    text-align: justify;
+ }
