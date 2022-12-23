@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content  %}
+
+
+<!-- Breadcrumb -->
+<nav class="flex px-5 py-3 text-gray-700 border border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+      <li class="inline-flex items-center">
+        <a href="/" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+          <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+          Home
+        </a>
+      </li>
+      <li aria-current="page">
+        <div class="flex items-center">
+          <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+          <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">About Us</span>
+        </div>
+      </li>
+    </ol>
+  </nav>
+
+  <!-- About section start  -->
+   
+  <div class="container-xxl py-5">
+    <div class="container">
+        <h2 class="text-center py-1 px-3 mb-3">ABOUT US</h2>
+        <div class="row">
+            <div class="col-lg-6" >
+                <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100 pt-5 pe-5" src="{% static 'images/WhatsApp Image 2022-10-22 at 09.47.26.jpeg' %}" alt="" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="h-100">
+                    <p class="my-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt  
+                        mollit anim id est laborum cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt  
+                        mollit anim id est laborum. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!-- Cards section start  -->
+   <div class="cards-container">
+    <div class="card">
+        <div class="card-text">Top Values</div>
+    </div>
+    <div class="card">
+        <div class="card-text">Discover your talent</div>
+    </div>
+    <div class="card">
+        <div class="card-text">Get Mentorship</div>
+    </div>
+</div>
+<!-- Cards section end -->
+
+<!-- About section end  -->
+  
+
+       
+{% endblock  %}        
